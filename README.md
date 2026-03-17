@@ -105,6 +105,21 @@ The **research question** this project addresses:
   → Interactive Viewer (post-session)
 ```
 
+### Live Detection Screenshots
+
+<table>
+  <tr>
+    <td align="center">
+      <img src="docs/Evidence/1.png" alt="Real-time bilateral knee goniometry — MediaPipe skeleton overlay with live left and right knee angle graphs" width="480"/><br/>
+      <sub><b>Fig. 1</b> — Real-time detection: MediaPipe skeleton overlay on a walking subject, with simultaneous left (green) and right (red) knee angle graphs updating at 30 FPS.</sub>
+    </td>
+    <td align="center">
+      <img src="docs/Evidence/2.png" alt="Full detection interface showing patient data panel and extended goniometric traces" width="480"/><br/>
+      <sub><b>Fig. 2</b> — Full application interface: patient data panel, live video feed, and extended bilateral goniometric traces captured over a longer walking session.</sub>
+    </td>
+  </tr>
+</table>
+
 ---
 
 ## Tech Stack
@@ -163,6 +178,20 @@ The system was tested on **47 clinically healthy participants** under controlled
 The left knee consistently outperformed the right knee in correlation — likely attributable to systematic camera positioning relative to the dominant limb and lateral symmetry bias in the 2D projection.
 
 **Interpretation:** The RMSE values (10–13°) are comparable to or better than those reported in peer-reviewed studies using similar markerless, single-camera setups. The Pearson correlations (0.78–0.86) confirm that the system captures the characteristic flexion-extension waveform of the gait cycle, including heel-strike loading and maximum swing-phase flexion.
+
+### Reference Setup — Biometrics DataLink Electrogoniometer
+
+<p align="center">
+  <img src="docs/Evidence/4.jpeg" alt="Participant walking with Biometrics DataLink electrogoniometer attached to the right knee" width="360"/><br/>
+  <sub><b>Fig. 3</b> — A participant walking along the 5-meter test path with the Biometrics DataLink electrogoniometer attached to the right knee. This device served as the clinical ground truth for all 47 validation sessions.</sub>
+</p>
+
+### Filtered Signal Comparison
+
+<p align="center">
+  <img src="docs/Evidence/3.png" alt="Post-session interactive viewer showing filtered left and right knee angle curves overlaid for comparison" width="720"/><br/>
+  <sub><b>Fig. 4</b> — Post-session interactive graph viewer displaying filtered left (green) and right (red) knee angle traces over a full walking session (~13 seconds). The viewer supports zoom, pan, and data export. Signal statistics (max, min) are shown in the control panel below the graph.</sub>
+</p>
 
 ---
 
